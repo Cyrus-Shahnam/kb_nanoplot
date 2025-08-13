@@ -35,7 +35,8 @@
                     "target_property": "workspace_id"
                 },{
                     "input_parameter": "reads_input_ref",
-                    "target_property": "reads_input_ref"
+                    "target_property": "reads_input_ref",
+                    "target_type_transform": "resolved-ref"
                 }
             ],
       "output_mapping": [
