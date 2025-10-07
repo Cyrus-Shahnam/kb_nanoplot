@@ -17,4 +17,11 @@ parameters:
     short-hint: Select your FASTQ SingleEndLibrary
     long-hint: Select a SingleEndLibrary object containing Nanopore reads
 
+publications :
+    -
+        display-text: |
+            De Coster W, Rademakers R. NanoPack2: population-scale evaluation of long-read sequencing data. Alkan C, editor. Bioinformatics. 2023;39: btad311. doi:10.1093/bioinformatics/btad311
+        link: https://pubmed.ncbi.nlm.nih.gov/37171891/
+        pmid: 37171891
+
 output_widget: kbaseReportView
