@@ -1,7 +1,7 @@
-name: NanoPlot
+name: Assess Reads Quality with NanoPlot
 
 tooltip: |
-  Generates NanoPlot QC plots from FASTQ reads in a KBase SingleEndLibrary.
+  Generate quality assessment graphs for Oxford Nanopore reads.
 
 description: |
   This app runs NanoPlot on a SingleEndLibrary object containing Nanopore FASTQ reads. QC 
@@ -9,12 +9,12 @@ description: |
 
 screenshots: []
 
-icon: icon.png
+icon: kb_nanoplot.png
 
 parameters:
   reads_input_ref:
-    ui-name: Nanopore Reads (FASTQ)
-    short-hint: Select your FASTQ-based SingleEndLibrary
-    long-hint: This should be a KBaseFile.SingleEndLibrary object containing Nanopore reads
+    ui-name: Nanopore Reads
+    short-hint: Select your FASTQ SingleEndLibrary
+    long-hint: Select a SingleEndLibrary object containing Nanopore reads
 
 output_widget: kbaseReportView

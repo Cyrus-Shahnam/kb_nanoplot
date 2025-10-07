@@ -30,15 +30,13 @@ class kb_nanoplot:
 
 #END_CLASS_HEADER
 
-#END_CLASS_HEADER
-
-        def __init__(self, config):
+    def __init__(self, config):
         #BEGIN_CONSTRUCTOR
         self.callback_url = os.environ['SDK_CALLBACK_URL']
         self.scratch = config['scratch']
         logging.basicConfig(format='%(created)s %(levelname)s: %(message)s',
                             level=logging.INFO)
-    #END_CONSTRUCTOR
+        #END_CONSTRUCTOR
 
     #BEGIN run_kb_nanoplot
     def run_kb_nanoplot(self, ctx, params):
@@ -110,7 +108,7 @@ class kb_nanoplot:
                      'git_url': self.GIT_URL,
                      'git_commit_hash': self.GIT_COMMIT_HASH}
 #END_STATUS
- def run_userNameModulename(self, ctx, params):
+def run_userNameModulename(self, ctx, params):
         # Create a report
         report_creator = HTMLReportCreator(self.callback_url)
         output = report_creator.create_html_report(reportDirectory, params['workspace_name'], objects_created)
@@ -121,10 +119,3 @@ class kb_nanoplot:
         logging.info('Corrected file name: ' + corrected_file_name)
 
 
-        new_reads_upa = upload_reads(self.callback_url, corrected_file_path, params['workspace_name'], corrected_file_name, params['input_reads_ref'])
-
-
-        objects_created = [{
-                'ref': new_reads_upa,
-                'description': 'Corrected reads library'
-            }]
