@@ -2,7 +2,7 @@
   "ver": "0.0.1",
   "authors": ["ac.shahnam"],
   "contact": "",
-  "categories": ["active"],
+  "categories": ["reads", "active"],
   "widgets": {
     "input": null,
     "output": "kbaseReportView"
