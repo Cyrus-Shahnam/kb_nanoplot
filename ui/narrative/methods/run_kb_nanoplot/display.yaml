@@ -4,8 +4,7 @@ tooltip: |
   Generate quality assessment graphs for Oxford Nanopore reads.
 
 description: |
-  This app runs NanoPlot on a SingleEndLibrary object containing Nanopore FASTQ reads. QC 
-  It returns plots of read quality, length distributions, N50, and cumulative yield for quality control.
+  This app runs NanoPlot on a SingleEndLibrary object containing Nanopore FASTQ reads. It produces several plots with information about read quality, length distributions, N50, and cumulative yield for quality assessment and control of read libraries.
 
 screenshots: []
 
